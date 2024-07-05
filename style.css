@@ -16,6 +16,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction:column ;
 }
 
 header {
@@ -34,7 +35,7 @@ header {
     text-align: center;
     margin-top: 1rem;
     width: 40vw;
-    min-width: 250px;
+    min-width: 300px;
 }
 
 .content h3 {
@@ -42,7 +43,8 @@ header {
     margin-bottom: 0.6rem;
 }
 
-.content p {
+.content p,
+.abt-slide-sub-container p {
     color:  hsl(210, 10%, 33%);
 }
 
@@ -72,6 +74,51 @@ header {
     background-color: hsl(233, 100%, 69%);
 }
 
+/* ============================= */
+.abt {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.abt-intro-content {
+margin: 0 auto;
+}
+.abt-slide {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.main-img img {
+    display: block;
+    width: 430px;
+    min-width: 300px;
+    margin-left: -30px;
+}
+
+.abt-intro-content {
+    margin-bottom: 1.6rem;
+}
+
+.abt-slide-sub-container {
+    width: 25vw;
+    min-width: 300px;
+}
+
+.abt-slide-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.abt-slide-sub-container h5 {
+   font-size: 0.9rem;
+}
+
+.abt-slide-sub-container p {
+   font-size: 0.9rem;
+}
 
 @media only screen and (max-width: 600px) {
     .logo-container img {
@@ -80,5 +127,21 @@ header {
     .btn-container {
         flex-direction: column;
         width: 100%;
+    }
+
+    .abt-slide {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .abt-slide-sub-container h5 {
+        text-align: center;
+        margin-bottom: 0.5rem;
+        font-size: 18px;
+     }
+
+     .main-img img {
+        margin-left: 0px;
+        width: 300px;
     }
   }
