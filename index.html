@@ -46,17 +46,17 @@
       </div>
 
       <div class="abt-slide-content">
-        <div class="abt-slide-sub-container">
+        <div class="abt-slide-sub-container abt-card-one">
           <h5>Quick Search</h5>
           <p>Easily search your snippets by content, category, web address, application, and more.
           </p>
         </div>
-        <div class="abt-slide-sub-container">
+        <div class="abt-slide-sub-container abt-card-two">
           <h5>iCloud Sync</h5>
           <p>Instantly saves and syncs snippets across all your devices.
           </p>
         </div>
-        <div class="abt-slide-sub-container">
+        <div class="abt-slide-sub-container abt-card-three">
           <h5>Complete History</h5>
           <p>Retrieve any snippets from the first moment you started using the app.
           </p>
@@ -89,49 +89,45 @@
    </div>
   
    <!-- ============================================= -->
-  <div class="cards">
+  <div class="cards" id="cards">
    <div class="cards-content">
-    <div class="card">
+    <div class="card" id="one">
       <h4>Create blacklists</h4>
       <p> Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
     </div>
 
     <!-- second card -->
-    <div class="card">
+    <div class="card" id="two">
       <h4>Plain text snippets</h4>
       <p>Remove unwanted formatting from copied text for a consistent look.</p>
     </div>
 
     <!-- third card -->
-    <div class="card">
+    <div class="card" id="three">
       <h4>Sneak preview</h4>
       <p>Quick preview of all snippets on your Clipboard for easy access.</p>
     </div>
 
    </div>
 
-   <div class="co-icons">
-    <div class="icon">
-      <img src="./images/logo-google.png" alt="">
-    </div>
+    <div class="co-icons">
+        <div class="icon">
+            <img src="./images/logo-google.png" alt="">
+        </div>
+        <div class="icon">
+            <img src="./images/logo-ibm.png" alt="">
+        </div>
+        <div class="icon">
+            <img src="./images/logo-microsoft.png" alt="">
+        </div>
+        <div class="icon">
+            <img src="./images/logo-hp.png" alt="">
+        </div>
+        <div class="icon">
+            <img src="./images/logo-vector-graphics.png" alt="">
+        </div>
+</div>
 
-    <div class="icon">
-      <img src="./images/logo-ibm.png" alt="">
-    </div>
-
-    <div class="icon">
-      <img src="./images/logo-microsoft.png" alt="">
-    </div>
-
-    <div class="icon">
-      <img src="./images/logo-hp.png" alt="">
-    </div>
-
-    <div class="icon">
-      <img src="./images/logo-vector-graphics.png" alt="">
-    </div>
-
-   </div>
   </div>
 
 <!-- . Clipboard for iOS and Mac OS -->
@@ -150,14 +146,6 @@
           
   </div>
   </div>
-
-
-
-  
-  
- 
-  
-  
   
   <footer>
     <div class="footer-content">
@@ -167,7 +155,7 @@
 
       <div class="connect">
         <ul>
-          <li>FAQs</li>
+          <li class="fq">FAQs</li>
           <li>Contact Us</li>
         </ul>
       </div>
@@ -179,14 +167,14 @@
         </ul>
       </div>
 
-      <div class="connect">
+      <div class="connect guide">
         <ul>
           <li>Install Guide</li>
         </ul>
       </div>
 
-      <div class="connect">
-        <ul>
+      <div class="connect socials">
+        <ul id="icons">
           <li><i class="fa-brands fa-facebook"></i></li>
           <li><i class="fa-brands fa-twitter"></i></li>
           <li><i class="fa-brands fa-instagram"></i></li>
@@ -200,5 +188,8 @@
       Coded by <a href="#">Charles Mambo</a>.
     </p>
   </footer>
+
+
+  <script src="index.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
 }
 
 body {
-    font-size: 15px;
+    font-size: 18px;
     background-image: url(./images/bg-header-desktop.png);
     background-repeat: no-repeat;
     background-color: #FFF8F3;
@@ -31,7 +31,7 @@ header {
 
 .logo-container img {
     display: block;
-    width: 70px;
+    width: 60px;
 }
 
 .content {
@@ -42,7 +42,7 @@ header {
 }
 
  h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-bottom: 0.6rem;
 }
 
@@ -52,7 +52,7 @@ header {
 }
 
 .btn-container {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     gap: 1rem;
 }
@@ -167,7 +167,10 @@ margin: 0 auto;
     width: 430px;
     min-width: 300px;   
 }
-
+.cards-content {
+    overflow: hidden;
+    padding:  1rem;
+}
 .card p {
    font-size: 13px;
    color:  hsl(210, 10%, 33%);
@@ -202,6 +205,7 @@ margin: 0 auto;
 
 h4 {
     margin-bottom: 4px;
+    font-size: 1.1rem;
 }
 
 /* co icons styles */
@@ -211,6 +215,22 @@ h4 {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+}
+
+.icon {
+    animation: slide 10s infinite;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(0%); }
+    25% { transform: translateX(-40%); }
+    45% { transform: translateX(-20%); }
+    50% { transform: translateX(-40%); }
+    70% { transform: translateX(-40%); }
+    75% { transform: translateX(-60%); }
+    95% { transform: translateX(-60%); }
+    100% { transform: translateX(20%); }
 }
 
 .icon img {
@@ -230,7 +250,8 @@ h4 {
     flex-direction: column; 
 }
 
-.clipboard-sub-container {
+.clipboard-sub-container,
+.clipboard-content {
     width: 40vw;
     min-width: 300px; 
     text-align: center;
@@ -238,7 +259,7 @@ h4 {
 
 
 footer {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     background-image: url(./images/bg-header-desktop.png);
     background-repeat: no-repeat;
     background-color: #FFF8F3;
@@ -284,10 +305,151 @@ footer {
     font-size: 12px;
 }
 
+@media only screen and (max-width: 165px) {
+.logo-container img {
+    width: 13px !important;
+}
+.content,
+.abt-slide-sub-container,
+.access-content,
+.co-icons,
+.clipboard-sub-container{
+    width: 22vw;
+    min-width: 145px !important;
+}
+
+.main-img img,
+.access-img-container img {
+    display: block;
+    width: 145px !important;
+    min-width: 145px !important;
+    margin-left: -0px !important;
+}
+
+.content h3,
+.access-content h3 {
+    font-size: 15px;
+}
+.abt-slide-sub-container h5 {
+    font-size: 13px !important;
+}
+.access {
+    margin-top: 1rem;
+}
+
+.workflow,
+.clipboard {
+    margin-top: 0.8rem !important;
+}
+
+.cards-content {
+    flex-direction: column;
+}
+#cards {
+    margin-top: 1rem !important;
+}
+#one {
+    width: 15vw !important;
+    min-width: 120px !important;
+    height: 150px;
+    padding: 0.8rem;
+    background-color: hsl(171, 64%, 65%);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+#two {
+    width: 15vw !important;
+    min-width: 120px !important;
+    height: 150px;
+    padding: 0.8rem;
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+#three {
+    width: 15vw !important;
+    min-width: 120px !important;
+    height: 150px;
+    padding: 0.8rem;
+    background-color: hsl(171, 64%, 65%);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.abt-slide-sub-container  {
+    width: 15vw !important;
+    min-width: 120px !important;
+    height: auto;
+    padding: 0.8rem;  
+}
+h4 {
+    font-size: 14px;
+}
+
+.co-icons {
+    overflow: hidden;
+    margin-top: 0.6rem;
+}
+.icon img {
+    width: 40px;
+}
+
+.clipboard-content,
+.connect {
+    padding: 0 !important;
+    width: 145px !important;
+    min-width: 145px !important;
+}
+
+.clipboard-content h3 {
+    font-size: 15px;
+}
+footer {
+    margin-top: 3rem;
+}
+.footer-content {
+    flex-direction: column;
+}
+.connect {
+    margin: 0.6rem 0;
+
+}
+
+.connect ul{
+   flex-direction: column;
+   gap: 0.4rem;
+}
+
+#icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.attribution {
+  font-size: 12px;
+}
+
+.footer-content{
+    flex-wrap: wrap;
+    gap: 0rem;;
+    margin-left: -12px;
+} 
+
+.guide,
+.fq {
+    display: block;
+}
+.socials {
+  margin: 0;
+  width: fit-content;
+}
+
+}
+
 
 @media only screen and (max-width: 600px) {
     .logo-container img {
-        width: 70px;
+        width: 40px;
     }
     .btn-container {
         flex-direction: column;
@@ -299,14 +461,72 @@ footer {
         flex-direction: column;
     }
 
+    .abt-slide-sub-container {
+        text-align: center;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        padding: 1rem;
+        border-radius: 3px;
+    }
+
     .abt-slide-sub-container h5 {
         text-align: center;
         margin-bottom: 0.5rem;
         font-size: 18px;
      }
 
-     .main-img img {
+    .abt-slide-sub-container p {
+        font-size: 18px;
+     }
+
+     .main-img img,
+     .access-img-container img,
+     .card {
         margin-left: 0px;
         width: 300px;
     }
+
+    .workflow,
+    .cards{
+        margin-top: 1rem !important;
+    }
+
+    .footer-content{
+        flex-wrap: wrap;
+        gap: 0.7rem;
+    } 
+
+    .guide,
+    .fq {
+        display: none;
+    }
+    .socials {
+      margin: 0 auto;
+    }
+
+    .abt-card-one {
+        background-color:  hsl(233, 91%, 79%);
+        color: #2C4E80;
+    }
+    .abt-card-two {
+        background-color: #EEF7FF;
+    }
+    .abt-card-three {
+        background-color:  hsl(171, 39%, 56%) !important;
+        color: #2C4E80;
+    } 
+    .cards-content {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 1000px) {
+    .content,
+    .access-content,
+    .clipboard-content{
+        width: 55vw;
+    }
+    
   }
